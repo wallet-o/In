@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Wallet Login</title> 
+  <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #000;
+            color: white;
+        }
+
+        .login-container {
+            background: #111;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+            text-align: center;
+            width: 350px;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: bold;
+            color: #fdbb2d;
+            margin-bottom: 15px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 2px solid #fdbb2d;
+            border-radius: 5px;
+            background: #222;
+            color: white;
+            font-size: 16px;
+            outline: none;
+        }
+
+        input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        button {
+            width: 100%;
+            background: #fdbb2d;
+            border: none;
+            padding: 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #e09b00;
+        }
+
+        .footer {
+            margin-top: 15px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+    </style> 
+ </head> 
+ <body> 
+  <div class="login-container"> 
+   <h1>Wallet</h1> 
+   <input type="text" id="username" placeholder="Username" required> 
+   <input type="password" id="password" placeholder="Password" required> 
+   <button onclick="login()">Login</button> 
+   <p class="footer">Secure Login © 2025</p> 
+  </div> 
+  <script>
+        function login() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username === "uwmhyo" && password === "rreyuiuh") {
+                window.location.href = "https://wallet-o.github.io/Io/";
+            } else {
+                alert("Invalid username or password");
+            }
+        }
+    </script> 
+ 
+</body></html>
